@@ -85,22 +85,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->setLanguage('pl', 'languages/');                         // Error Language
     $mail->CharSet          = 'utf-8';
 
-	$mail->Subject          = $sendmail['subject'];
-	$mail->Body             = $sendmail['body'];
+	  $mail->Subject          = $sendmail['subject'];
+	  $mail->Body             = $sendmail['body'];
 
-	if(!$mail->send()) {
-		http_response_code(500);
-	  echo $message['error'];
-	  echo $mail->ErrorInfo;
-	} else {
-		http_response_code(200);
-	  echo $message['success'];
-	}
+    if(!$mail->send()) {
+        http_response_code(500);
+        echo $message['error'];
+        echo $mail->ErrorInfo;
+    } else {
+        http_response_code(200);
+        echo $message['success'];
+    }
 
 	// --------------------------------------------------------------------------- end of 03
 
 } else {
-	echo $message['no_access'];
+    echo $message['no_access'];
 }
 
 ?>
