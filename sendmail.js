@@ -21,14 +21,14 @@ jQuery(document).ready(function($)
 
 	// 01 ------------------------------------------------------------------------ UserForm Variables
 
-	var scriptPath			= 'assets/SendMail/';				// Path to SendMail Script
-	var form 						= $('#contact-form');				// Contact Form ID
+	var scriptPath			= 'assets/SendMail/';			// Path to SendMail Script
+	var form 				= $('#contact-form');			// Contact Form ID
 	var formMessages 		= $('#form-messages');			// Response containder ID
 	var formMsgTxt			= $('#form-messages p');		// Response text containder ID
-	var clear_button		= $('#clear');							// Clear Button ID
-	var inputClass			= $('.form-control');				// Input Fields Class
-	var submitButton		= $('button');							// Submit Button ID
-	var loaderContainer = $('#loader');							// Loader Icon containder ID
+	var clear_button		= $('#clear');					// Clear Button ID
+	var inputClass			= $('.form-control');			// Input Fields Class
+	var submitButton		= $('button');					// Submit Button ID
+	var loaderContainer     = $('#loader');					// Loader Icon containder ID
 
 	// --------------------------------------------------------------------------- end of 01
 
@@ -94,12 +94,12 @@ jQuery(document).ready(function($)
 			var msg = '';
 
 			if (jqXHR.status === 0) msg = 'Not connect.\n Verify Network.';
-	    else if (jqXHR.status == 404) msg = 'Requested page not found. [404]';
-	    else if (jqXHR.status == 500) msg = 'Internal Server Error [500]: \n' + jqXHR.responseText;
-	    else if (exception === 'parsererror') msg = 'Requested JSON parse failed.';
-	    else if (exception === 'timeout') msg = 'Time out error.';
-	    else if (exception === 'abort') msg = 'Ajax request aborted.';
-	    else msg = 'Uncaught Error.\n' + jqXHR.responseText;
+            else if (jqXHR.status == 404) msg = 'Requested page not found. [404]';
+            else if (jqXHR.status == 500) msg = 'Internal Server Error [500]: \n' + jqXHR.responseText;
+            else if (exception === 'parsererror') msg = 'Requested JSON parse failed.';
+            else if (exception === 'timeout') msg = 'Time out error.';
+            else if (exception === 'abort') msg = 'Ajax request aborted.';
+            else msg = 'Uncaught Error.\n' + jqXHR.responseText;
 
 			$(formMsgTxt).html(msg);
 
