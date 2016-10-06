@@ -16,14 +16,14 @@ EasySendMail is a personalized script to sending emails directly from your webpa
 First, you nedd to change a `UserForm Variables` in `sendmail.js` file:
 
 ``` javascript
-var scriptPath      = 'assets/SendMail/';			// Path to SendMail Script
-var form 	       = $('#contact-form');			// Contact Form ID
-var formMessages    = $('#form-messages');	   	// Response containder ID
-var formMsgTxt	  = $('#form-messages p');		 // Response text containder ID
-var clear_button    = $('#clear');				   // Clear Button ID
-var inputClass	  = $('.form-control');			// Input Fields Class
-var submitButton    = $('button');				   // Submit Button ID
-var loaderContainer = $('#loader');				  // Loader Icon containder ID
+var scriptPath      = 'assets/SendMail/';		  // Path to SendMail Script
+var form 	          = $('#contact-form');		  // Contact Form ID
+var formMessages    = $('#form-messages');	  // Response containder ID
+var formMsgTxt	    = $('#form-messages p');  // Response text containder ID
+var clear_button    = $('#clear');				    // Clear Button ID
+var inputClass	    = $('.form-control');		  // Input Fields Class
+var submitButton    = $('button');				    // Submit Button ID
+var loaderContainer = $('#loader');				    // Loader Icon containder ID
 ```
 Then, include a `sendmail.js` file on your webpage, before `body` closing mark.
 
