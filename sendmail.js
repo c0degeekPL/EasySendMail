@@ -61,7 +61,7 @@ jQuery(document).ready(function($)
             url    : scriptPath + 'sendmail.php',
             data   : formData
 
-		})
+        })
 
         // 03.01 ------------------------------------------------------------------- Submit ajax.succes Event
 
