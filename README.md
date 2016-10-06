@@ -4,7 +4,7 @@ The personalized SendMail Script
 ![ScriptVersion](https://img.shields.io/badge/Script_Version-v1.0-green.svg)
 ![PHPMailerVersion](https://img.shields.io/badge/PHPMailer_Version-v5.2.16-yellow.svg)
 ![ScriptLicense](https://img.shields.io/badge/Script_License-MIT-blue.svg)
-![PHPMailerLicense](https://img.shields.io/badge/Script_License-LGPL--2.1-lightgrey.svg)
+![PHPMailerLicense](https://img.shields.io/badge/PHPMailer_License-LGPL--2.1-lightgrey.svg)
 
 ## About ##
 
