@@ -1,5 +1,7 @@
 <?php
 
+//test
+
 /*!
  * Personalized config PHPMailer Script. Script is using a PHPMailer Repository
  * @PHPMailer https://github.com/PHPMailer/PHPMailer
